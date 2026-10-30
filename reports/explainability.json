@@ -1,0 +1,750 @@
+{
+  "accuracy_by_day": {
+    "RuleFit (final)": {
+      "1": 93.72,
+      "2": 94.43,
+      "3": 94.49,
+      "4": 94.92,
+      "5": 95.13,
+      "6": 95.29,
+      "7": 95.49,
+      "8": 95.74,
+      "9": 96.08,
+      "10": 96.08,
+      "11": 96.18,
+      "12": 96.17,
+      "13": 96.51,
+      "14": 96.74,
+      "15": 96.95
+    },
+    "EBM": {
+      "1": 93.81,
+      "2": 94.12,
+      "3": 94.16,
+      "4": 94.26,
+      "5": 94.55,
+      "6": 94.84,
+      "7": 95.07,
+      "8": 95.01,
+      "9": 95.56,
+      "10": 95.78,
+      "11": 95.77,
+      "12": 95.85,
+      "13": 96.17,
+      "14": 96.7,
+      "15": 96.81
+    },
+    "LightGBM": {
+      "1": 93.78,
+      "2": 94.12,
+      "3": 94.31,
+      "4": 94.56,
+      "5": 94.88,
+      "6": 95.0,
+      "7": 95.09,
+      "8": 95.23,
+      "9": 95.66,
+      "10": 95.9,
+      "11": 95.91,
+      "12": 95.97,
+      "13": 96.19,
+      "14": 96.68,
+      "15": 96.89
+    },
+    "Logistic regression": {
+      "1": 93.09,
+      "2": 93.48,
+      "3": 93.51,
+      "4": 94.26,
+      "5": 94.44,
+      "6": 95.09,
+      "7": 95.39,
+      "8": 95.56,
+      "9": 95.7,
+      "10": 95.85,
+      "11": 95.97,
+      "12": 95.97,
+      "13": 96.12,
+      "14": 96.83,
+      "15": 96.98
+    },
+    "Pace rule": {
+      "1": 87.79,
+      "2": 90.55,
+      "3": 92.09,
+      "4": 92.87,
+      "5": 93.47,
+      "6": 94.95,
+      "7": 95.19,
+      "8": 95.51,
+      "9": 95.83,
+      "10": 95.97,
+      "11": 96.13,
+      "12": 96.27,
+      "13": 96.46,
+      "14": 96.83,
+      "15": 96.95
+    }
+  },
+  "confusion_matrix": [
+    [
+      17294,
+      2523
+    ],
+    [
+      1430,
+      67985
+    ]
+  ],
+  "n_rules": 36,
+  "rule_lengths": {
+    "1": 8,
+    "2": 25,
+    "3": 3
+  },
+  "baseline_log_odds": 2.6789021910830533,
+  "intercept": 0.03876582566443357,
+  "top_rules": [
+    {
+      "rule_readable": "Units allowed per day from now > 1.93  AND  Units in the last 3 days \u2264 9.66  AND  Last month's bill (units) \u2264 62.1",
+      "weight": -1.2373,
+      "support": 0.2278,
+      "importance": 0.519
+    },
+    {
+      "rule_readable": "Projected month total at current pace \u2264 59.2",
+      "weight": -1.0095,
+      "support": 0.2367,
+      "importance": 0.4291
+    },
+    {
+      "rule_readable": "Units allowed per day from now \u2264 2.1  AND  Projected total using usual habits > 58.8",
+      "weight": 0.9967,
+      "support": 0.7611,
+      "importance": 0.425
+    },
+    {
+      "rule_readable": "Units in the last 3 days > 5.23  AND  Projected total using usual habits > 67.2",
+      "weight": 0.7223,
+      "support": 0.705,
+      "importance": 0.3294
+    },
+    {
+      "rule_readable": "Allowed per day vs recent daily usage \u2264 0.82  AND  Current pace vs the limit > 99%",
+      "weight": 0.7111,
+      "support": 0.6901,
+      "importance": 0.3289
+    },
+    {
+      "rule_readable": "Units allowed per day from now \u2264 1.98  AND  Allowed per day vs recent daily usage \u2264 0.834  AND  Projected month total at current pace > 60.8",
+      "weight": 0.5216,
+      "support": 0.691,
+      "importance": 0.241
+    },
+    {
+      "rule_readable": "Allowed per day vs recent daily usage \u2264 0.894  AND  Projected total using usual habits > 61.3",
+      "weight": 0.4848,
+      "support": 0.7061,
+      "importance": 0.2209
+    },
+    {
+      "rule_readable": "Units allowed per day from now \u2264 2.07  AND  Allowed per day vs recent daily usage \u2264 1",
+      "weight": 0.4879,
+      "support": 0.7518,
+      "importance": 0.2107
+    },
+    {
+      "rule_readable": "Projected month total at current pace > 60  AND  Projected total using usual habits > 57",
+      "weight": -0.4502,
+      "support": 0.7406,
+      "importance": 0.1973
+    },
+    {
+      "rule_readable": "Units allowed per day from now > 1.97  AND  Last month's bill (units) \u2264 64.5",
+      "weight": -0.4604,
+      "support": 0.2297,
+      "importance": 0.1937
+    },
+    {
+      "rule_readable": "Recent daily usage (3 days) > 2.06  AND  Projected total using usual habits > 58.9",
+      "weight": 0.4174,
+      "support": 0.7106,
+      "importance": 0.1893
+    },
+    {
+      "rule_readable": "Allowed per day vs recent daily usage \u2264 1.09  AND  Projected total using usual habits > 67.7",
+      "weight": 0.3929,
+      "support": 0.7084,
+      "importance": 0.1786
+    },
+    {
+      "rule_readable": "Units allowed per day from now \u2264 2.03  AND  Last month's bill (units) > 62.1",
+      "weight": -0.3778,
+      "support": 0.7239,
+      "importance": 0.1689
+    },
+    {
+      "rule_readable": "Allowed per day vs recent daily usage \u2264 1.22  AND  Projected total using usual habits > 64.6",
+      "weight": 0.3313,
+      "support": 0.73,
+      "importance": 0.1471
+    },
+    {
+      "rule_readable": "Projected month total at current pace \u2264 60.3",
+      "weight": -0.3164,
+      "support": 0.2435,
+      "importance": 0.1358
+    }
+  ],
+  "rule_feature_importance": {
+    "remaining_by_history": 0.2092,
+    "allowed_vs_recent": 0.1872,
+    "pace_projection": 0.1814,
+    "allowed_per_day": 0.1782,
+    "prev1": 0.0893,
+    "last3": 0.0788,
+    "pace_ratio": 0.0572,
+    "recent3_rate": 0.0187,
+    "prev2": 0.0,
+    "prev3": 0.0,
+    "day": 0.0,
+    "days_in_month": 0.0,
+    "last7": 0.0,
+    "so_far": 0.0,
+    "weekend_days_left": 0.0,
+    "holidays_left": 0.0,
+    "washing_machine": 0.0,
+    "electric_water_heater": 0.0,
+    "n_fridge": 0.0,
+    "n_ac": 0.0,
+    "members": 0.0,
+    "month": 0.0,
+    "limit": 0.0,
+    "electric_cooking": 0.0,
+    "recent_rate": 0.0,
+    "units_left": 0.0,
+    "home_business": 0.0,
+    "history_avg": 0.0,
+    "history_max": 0.0,
+    "history_ratio": 0.0,
+    "history_trend": 0.0,
+    "trend_ratio": 0.0
+  },
+  "features_used": 8,
+  "rules_per_prediction": {
+    "mean_rules_true": 21.820849022772098,
+    "median_rules_true": 26.0,
+    "mean_rules_with_contribution_ge_0.1": 15.478102026178949,
+    "share_explained_by_top3_rules": 0.2611023312729963
+  },
+  "local_examples": {
+    "Clearly over": {
+      "row": 63852,
+      "p": 0.9942315915657087,
+      "log_odds": 5.149573961162392,
+      "baseline": 2.6789021910830533,
+      "actual_total": 91.17410000000018,
+      "limit": 62.0,
+      "top_rules": {
+        "\u2717 Units allowed per day from now > 1.93  AND  Units in the last 3 days \u2264 9.66  AND  Last month's bill (units) \u2264 62.1": 0.282,
+        "\u2717 Units allowed per day from now \u2264 2.03  AND  Last month's bill (units) > 62.1": 0.273,
+        "\u2717 Projected month total at current pace \u2264 59.2": 0.239,
+        "\u2713 Units allowed per day from now \u2264 2.1  AND  Projected total using usual habits > 58.8": 0.238,
+        "\u2713 Allowed per day vs recent daily usage \u2264 0.82  AND  Current pace vs the limit > 99%": 0.22,
+        "\u2713 Units in the last 3 days > 5.23  AND  Projected total using usual habits > 67.2": 0.213,
+        "\u2713 Units allowed per day from now \u2264 1.98  AND  Allowed per day vs recent daily usage \u2264 0.834  AND  Projected month total at current pace > 60.8": 0.161
+      }
+    },
+    "Clearly under": {
+      "row": 47808,
+      "p": 0.046947831035029586,
+      "log_odds": -3.010632636736773,
+      "baseline": 2.6789021910830533,
+      "actual_total": 16.507000000000005,
+      "limit": 62.0,
+      "top_rules": {
+        "\u2713 Units allowed per day from now > 1.93  AND  Units in the last 3 days \u2264 9.66  AND  Last month's bill (units) \u2264 62.1": -0.955,
+        "\u2713 Projected month total at current pace \u2264 59.2": -0.771,
+        "\u2717 Units allowed per day from now \u2264 2.1  AND  Projected total using usual habits > 58.8": -0.759,
+        "\u2717 Units in the last 3 days > 5.23  AND  Projected total using usual habits > 67.2": -0.509,
+        "\u2717 Allowed per day vs recent daily usage \u2264 0.82  AND  Current pace vs the limit > 99%": -0.491,
+        "\u2717 Units allowed per day from now \u2264 2.07  AND  Allowed per day vs recent daily usage \u2264 1": -0.367,
+        "\u2717 Units allowed per day from now \u2264 1.98  AND  Allowed per day vs recent daily usage \u2264 0.834  AND  Projected month total at current pace > 60.8": -0.36
+      }
+    },
+    "Borderline": {
+      "row": 80842,
+      "p": 0.5011305076199604,
+      "log_odds": 0.004522038185691329,
+      "baseline": 2.6789021910830533,
+      "actual_total": 65.62300000000005,
+      "limit": 62.0,
+      "top_rules": {
+        "\u2713 Projected month total at current pace \u2264 59.2": -0.771,
+        "\u2717 Units in the last 3 days > 5.23  AND  Projected total using usual habits > 67.2": -0.509,
+        "\u2717 Allowed per day vs recent daily usage \u2264 0.82  AND  Current pace vs the limit > 99%": -0.491,
+        "\u2717 Units allowed per day from now \u2264 2.07  AND  Allowed per day vs recent daily usage \u2264 1": -0.367,
+        "\u2717 Units allowed per day from now \u2264 1.98  AND  Allowed per day vs recent daily usage \u2264 0.834  AND  Projected month total at current pace > 60.8": -0.36,
+        "\u2717 Allowed per day vs recent daily usage \u2264 0.894  AND  Projected total using usual habits > 61.3": -0.342,
+        "\u2717 Projected month total at current pace > 60  AND  Projected total using usual habits > 57": 0.333
+      }
+    }
+  },
+  "shap_importance": {
+    "remaining_by_history": 0.6466,
+    "allowed_vs_recent": 0.5942,
+    "allowed_per_day": 0.5147,
+    "pace_projection": 0.3657,
+    "last3": 0.2785,
+    "prev1": 0.2159,
+    "pace_ratio": 0.1334,
+    "recent3_rate": 0.1037,
+    "prev2": 0.0,
+    "prev3": 0.0,
+    "day": 0.0,
+    "days_in_month": 0.0,
+    "last7": 0.0,
+    "so_far": 0.0,
+    "weekend_days_left": 0.0,
+    "holidays_left": 0.0,
+    "washing_machine": 0.0,
+    "electric_water_heater": 0.0,
+    "n_fridge": 0.0,
+    "n_ac": 0.0,
+    "members": 0.0,
+    "month": 0.0,
+    "limit": 0.0,
+    "electric_cooking": 0.0,
+    "recent_rate": 0.0,
+    "units_left": 0.0,
+    "home_business": 0.0,
+    "history_avg": 0.0,
+    "history_max": 0.0,
+    "history_ratio": 0.0,
+    "history_trend": 0.0,
+    "trend_ratio": 0.0
+  },
+  "shap_vs_exact_rowwise_spearman_median": 0.9968314321926491,
+  "permutation_importance": {
+    "allowed_per_day": 0.01145,
+    "remaining_by_history": 0.00725,
+    "prev1": 0.00512,
+    "allowed_vs_recent": 0.00493,
+    "last3": 0.00391,
+    "recent3_rate": 0.00046,
+    "day": 0.0,
+    "days_in_month": 0.0,
+    "prev2": 0.0,
+    "prev3": 0.0,
+    "month": 0.0,
+    "members": 0.0,
+    "last7": 0.0,
+    "so_far": 0.0,
+    "weekend_days_left": 0.0,
+    "holidays_left": 0.0,
+    "washing_machine": 0.0,
+    "electric_water_heater": 0.0,
+    "n_fridge": 0.0,
+    "n_ac": 0.0,
+    "recent_rate": 0.0,
+    "electric_cooking": 0.0,
+    "limit": 0.0,
+    "home_business": 0.0,
+    "history_max": 0.0,
+    "history_ratio": 0.0,
+    "units_left": 0.0,
+    "history_avg": 0.0,
+    "history_trend": 0.0,
+    "trend_ratio": 0.0,
+    "pace_ratio": -0.00036,
+    "pace_projection": -0.00044
+  },
+  "importance_spearman": {
+    "RuleFit rules": {
+      "RuleFit rules": 1.0,
+      "SHAP": 0.999,
+      "Permutation": 0.838
+    },
+    "SHAP": {
+      "RuleFit rules": 0.999,
+      "SHAP": 1.0,
+      "Permutation": 0.85
+    },
+    "Permutation": {
+      "RuleFit rules": 0.838,
+      "SHAP": 0.85,
+      "Permutation": 1.0
+    }
+  },
+  "importance_top5": {
+    "RuleFit rules": [
+      "remaining_by_history",
+      "allowed_vs_recent",
+      "pace_projection",
+      "allowed_per_day",
+      "prev1"
+    ],
+    "SHAP": [
+      "remaining_by_history",
+      "allowed_vs_recent",
+      "allowed_per_day",
+      "pace_projection",
+      "last3"
+    ],
+    "Permutation": [
+      "allowed_per_day",
+      "remaining_by_history",
+      "prev1",
+      "allowed_vs_recent",
+      "last3"
+    ]
+  },
+  "pdp": {
+    "Units used so far": {
+      "0": 0.513,
+      "5": 0.569,
+      "10": 0.6562,
+      "15": 0.7211,
+      "20": 0.7924,
+      "25": 0.8679,
+      "30": 0.9319,
+      "35": 0.9448,
+      "40": 0.9553,
+      "45": 0.9641,
+      "50": 0.973,
+      "55": 0.9789,
+      "60": 0.9858
+    },
+    "Usual monthly bill (units)": {
+      "20": 0.7096,
+      "30": 0.7162,
+      "40": 0.729,
+      "50": 0.7498,
+      "60": 0.7893,
+      "70": 0.8586,
+      "80": 0.8631,
+      "90": 0.8639,
+      "100": 0.8639,
+      "110": 0.8639,
+      "120": 0.8639,
+      "130": 0.8639
+    },
+    "Air conditioners": {
+      "0": 0.7812,
+      "1": 0.7812,
+      "2": 0.7812,
+      "3": 0.7812
+    },
+    "People in the house": {
+      "1": 0.7812,
+      "2": 0.7812,
+      "3": 0.7812,
+      "4": 0.7812,
+      "5": 0.7812,
+      "6": 0.7812,
+      "7": 0.7812,
+      "8": 0.7812
+    }
+  },
+  "lime_borderline": {
+    "lime": [
+      [
+        "allowed_vs_recent > 0.86",
+        -0.2086
+      ],
+      [
+        "allowed_per_day > 1.94",
+        -0.1516
+      ],
+      [
+        "pace_projection <= 70.64",
+        -0.1065
+      ],
+      [
+        "67.30 < remaining_by_history <= 109.74",
+        0.0803
+      ],
+      [
+        "last3 <= 6.19",
+        -0.0714
+      ],
+      [
+        "n_fridge <= 1.00",
+        0.0569
+      ],
+      [
+        "pace_ratio <= 1.15",
+        -0.043
+      ],
+      [
+        "recent3_rate <= 2.06",
+        -0.0334
+      ]
+    ],
+    "lime_top5": [
+      "allowed_vs_recent",
+      "allowed_per_day",
+      "pace_projection",
+      "remaining_by_history",
+      "last3"
+    ],
+    "exact_top5": [
+      "pace_projection",
+      "allowed_vs_recent",
+      "remaining_by_history",
+      "pace_ratio",
+      "last3"
+    ],
+    "top5_overlap": 4,
+    "sign_agreement_on_shared": "4/5"
+  },
+  "direction_audit": {
+    "single_condition_rules": 8,
+    "single_consistent_share": 0.5,
+    "single_consistent_importance_share": 0.8156910443915097,
+    "multi_condition_terms": 59,
+    "multi_consistent_share": 0.711864406779661,
+    "inconsistent_single": [
+      "Projected month total at current pace \u2264 62.9",
+      "Allowed per day vs recent daily usage > 0.919",
+      "Projected month total at current pace \u2264 63.1",
+      "Units allowed per day from now > 1.99"
+    ]
+  },
+  "slices": {
+    "socio_economic_class": [
+      {
+        "socio_economic_class": "SEC A",
+        "rows": 8334,
+        "households": 195,
+        "accuracy": 0.9725,
+        "rule_accuracy": 0.9568,
+        "share_over": 0.8531
+      },
+      {
+        "socio_economic_class": "SEC B",
+        "rows": 10461,
+        "households": 246,
+        "accuracy": 0.9422,
+        "rule_accuracy": 0.9324,
+        "share_over": 0.802
+      },
+      {
+        "socio_economic_class": "SEC C",
+        "rows": 17568,
+        "households": 427,
+        "accuracy": 0.9525,
+        "rule_accuracy": 0.9438,
+        "share_over": 0.8185
+      },
+      {
+        "socio_economic_class": "SEC D",
+        "rows": 7067,
+        "households": 175,
+        "accuracy": 0.9489,
+        "rule_accuracy": 0.9264,
+        "share_over": 0.668
+      },
+      {
+        "socio_economic_class": "SEC E",
+        "rows": 2749,
+        "households": 65,
+        "accuracy": 0.9109,
+        "rule_accuracy": 0.9065,
+        "share_over": 0.6097
+      }
+    ],
+    "type_of_house": [
+      {
+        "type_of_house": "Flat",
+        "rows": 901,
+        "households": 21,
+        "accuracy": 0.939,
+        "rule_accuracy": 0.929,
+        "share_over": 0.7159
+      },
+      {
+        "type_of_house": "Single House - Double Floor",
+        "rows": 16368,
+        "households": 388,
+        "accuracy": 0.9621,
+        "rule_accuracy": 0.9541,
+        "share_over": 0.8611
+      },
+      {
+        "type_of_house": "Single House - More than 2 floors",
+        "rows": 1304,
+        "households": 30,
+        "accuracy": 0.954,
+        "rule_accuracy": 0.9425,
+        "share_over": 0.7799
+      },
+      {
+        "type_of_house": "Single House - Single Floor",
+        "rows": 26243,
+        "households": 635,
+        "accuracy": 0.9457,
+        "rule_accuracy": 0.9317,
+        "share_over": 0.7509
+      }
+    ],
+    "csc_area": [
+      {
+        "csc_area": "ALUTHGAMA",
+        "rows": 761,
+        "households": 18,
+        "accuracy": 0.9869,
+        "rule_accuracy": 0.9698,
+        "share_over": 0.883
+      },
+      {
+        "csc_area": "BORALASGAMUWA",
+        "rows": 1150,
+        "households": 19,
+        "accuracy": 0.9835,
+        "rule_accuracy": 0.98,
+        "share_over": 0.9243
+      },
+      {
+        "csc_area": "KALUTARA",
+        "rows": 1109,
+        "households": 25,
+        "accuracy": 0.9739,
+        "rule_accuracy": 0.9684,
+        "share_over": 0.9225
+      },
+      {
+        "csc_area": "KESELWATTA",
+        "rows": 4836,
+        "households": 115,
+        "accuracy": 0.9491,
+        "rule_accuracy": 0.9351,
+        "share_over": 0.7767
+      },
+      {
+        "csc_area": "MAHARAGAMA",
+        "rows": 1817,
+        "households": 45,
+        "accuracy": 0.9631,
+        "rule_accuracy": 0.9499,
+        "share_over": 0.8514
+      },
+      {
+        "csc_area": "MORATUWA NORTH",
+        "rows": 15166,
+        "households": 374,
+        "accuracy": 0.9521,
+        "rule_accuracy": 0.9412,
+        "share_over": 0.7728
+      },
+      {
+        "csc_area": "MORATUWA SOUTH",
+        "rows": 11201,
+        "households": 265,
+        "accuracy": 0.9478,
+        "rule_accuracy": 0.9313,
+        "share_over": 0.7473
+      },
+      {
+        "csc_area": "PANADURA",
+        "rows": 8020,
+        "households": 206,
+        "accuracy": 0.9414,
+        "rule_accuracy": 0.9313,
+        "share_over": 0.7802
+      }
+    ],
+    "gap": [
+      {
+        "gap": "0-5",
+        "rows": 5299,
+        "households": 239,
+        "accuracy": 0.6137,
+        "rule_accuracy": 0.6084,
+        "share_over": 0.5027
+      },
+      {
+        "gap": "5-15",
+        "rows": 9478,
+        "households": 418,
+        "accuracy": 0.8843,
+        "rule_accuracy": 0.8183,
+        "share_over": 0.5288
+      },
+      {
+        "gap": "15-30",
+        "rows": 13108,
+        "households": 543,
+        "accuracy": 0.9615,
+        "rule_accuracy": 0.9357,
+        "share_over": 0.596
+      },
+      {
+        "gap": "30-60",
+        "rows": 23494,
+        "households": 809,
+        "accuracy": 0.9911,
+        "rule_accuracy": 0.9894,
+        "share_over": 0.6929
+      },
+      {
+        "gap": "60+",
+        "rows": 37853,
+        "households": 985,
+        "accuracy": 0.9975,
+        "rule_accuracy": 0.9973,
+        "share_over": 0.9946
+      }
+    ],
+    "survey": [
+      {
+        "survey": "No survey (smart-meter only)",
+        "rows": 43053,
+        "households": 1015,
+        "accuracy": 0.961,
+        "rule_accuracy": 0.9498,
+        "share_over": 0.7697
+      },
+      {
+        "survey": "Surveyed",
+        "rows": 46179,
+        "households": 1108,
+        "accuracy": 0.9508,
+        "rule_accuracy": 0.9387,
+        "share_over": 0.7856
+      }
+    ],
+    "sec_by_band": [
+      {
+        "socio_economic_class": "SEC A",
+        "beyond 15 units": 0.9932,
+        "within 15 units": 0.8219,
+        "share_within_15": 0.1206
+      },
+      {
+        "socio_economic_class": "SEC B",
+        "beyond 15 units": 0.9952,
+        "within 15 units": 0.7091,
+        "share_within_15": 0.1854
+      },
+      {
+        "socio_economic_class": "SEC C",
+        "beyond 15 units": 0.983,
+        "within 15 units": 0.8183,
+        "share_within_15": 0.1851
+      },
+      {
+        "socio_economic_class": "SEC D",
+        "beyond 15 units": 0.9971,
+        "within 15 units": 0.8105,
+        "share_within_15": 0.2584
+      },
+      {
+        "socio_economic_class": "SEC E",
+        "beyond 15 units": 0.988,
+        "within 15 units": 0.6716,
+        "share_within_15": 0.2437
+      }
+    ]
+  }
+}

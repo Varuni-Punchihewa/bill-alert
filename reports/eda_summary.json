@@ -1,0 +1,9 @@
+{
+  "bill_households": 4063,
+  "bill_months": "2022-10-31 .. 2024-10-31",
+  "bill_median_units": 96.0,
+  "bill_share_over_60": 0.7423,
+  "smart_household_months_modelled": 34725,
+  "smart_median_units": 101.0,
+  "share_within_15_units_of_limit": 0.1741
+}

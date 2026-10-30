@@ -1,0 +1,6 @@
+variant,rules,accuracy,balanced_accuracy,roc_auc,brier,log_loss,note
+"imodels RuleFitClassifier, as shipped",37,0.9512631822426304,0.9400444619380914,0.9798570845672863,0.03882432984936235,0.14440584896215242,"probability = softmax([1-z, z]) = sigmoid(2z-1)"
+"Same rules and lasso weights, sigmoid(z)",37,0.9520256320194639,0.9309619015312818,0.9798570845672863,0.046046740334637265,0.1907530555091357,"correct link function, weights still shrunk by the lasso"
+"Relaxed refit, no de-duplication",37,0.952394006630743,0.9345501104043434,0.979798186718828,0.037304621619833014,0.13711027697687855,"lasso selects, ordinary logistic regression re-estimates the weights"
+Relaxed refit + de-duplication (final),37,0.952394006630743,0.9345501104043434,0.979798186718828,0.037304621619833014,0.13711027697687855,identical / constant rules removed before the refit
+"Rules + linear terms (original RuleFit), sigmoid(z)",37,0.9525396431049696,0.9323206616720838,0.9807429256774953,0.04310929653831655,0.1781239639513023,adds raw features as linear terms; terms are no longer all IF-THEN sentences

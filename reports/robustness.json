@@ -1,0 +1,86 @@
+{
+  "unseen_households": {
+    "train_households": 1860,
+    "unseen_test_households": 421,
+    "test_rows": 17808,
+    "rulefit_accuracy": 0.9640049415992812,
+    "rulefit_auc": 0.985293694335687,
+    "pace_rule_accuracy_same_rows": 0.9511455525606469
+  },
+  "seed_stability": {
+    "runs": [
+      {
+        "seed": 0,
+        "val_accuracy": 0.9503979302486957,
+        "n_rules": 35,
+        "top5": [
+          "allowed_vs_recent",
+          "remaining_by_history",
+          "pace_projection",
+          "prev1",
+          "allowed_per_day"
+        ]
+      },
+      {
+        "seed": 1,
+        "val_accuracy": 0.9509205081856266,
+        "n_rules": 37,
+        "top5": [
+          "allowed_vs_recent",
+          "remaining_by_history",
+          "pace_projection",
+          "prev1",
+          "allowed_per_day"
+        ]
+      },
+      {
+        "seed": 2,
+        "val_accuracy": 0.9478964096325677,
+        "n_rules": 40,
+        "top5": [
+          "allowed_vs_recent",
+          "remaining_by_history",
+          "prev1",
+          "allowed_per_day",
+          "recent3_rate"
+        ]
+      },
+      {
+        "seed": 3,
+        "val_accuracy": 0.951768626476711,
+        "n_rules": 40,
+        "top5": [
+          "allowed_vs_recent",
+          "remaining_by_history",
+          "allowed_per_day",
+          "prev1",
+          "pace_ratio"
+        ]
+      },
+      {
+        "seed": 4,
+        "val_accuracy": 0.9523083381164921,
+        "n_rules": 40,
+        "top5": [
+          "allowed_vs_recent",
+          "remaining_by_history",
+          "recent3_rate",
+          "prev1",
+          "pace_projection"
+        ]
+      }
+    ],
+    "accuracy_mean": 0.9506583625320186,
+    "accuracy_std": 0.0017117268030361918,
+    "accuracy_range": [
+      0.9478964096325677,
+      0.9523083381164921
+    ],
+    "inputs_in_every_top5": [
+      "allowed_vs_recent",
+      "prev1",
+      "remaining_by_history"
+    ],
+    "mean_pairwise_top5_overlap": 4.0
+  }
+}

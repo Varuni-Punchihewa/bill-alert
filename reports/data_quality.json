@@ -1,0 +1,16 @@
+{
+  "raw_household_days": 1813466,
+  "raw_households": 2950,
+  "glitch_days_removed": 4232,
+  "solar_households_excluded": 515,
+  "households_after_cleaning": 2435,
+  "missing_reading_share": 0.0522,
+  "household_months": 51858,
+  "complete_household_months": 42293,
+  "rows_dropped_house_empty_last_month": 37393,
+  "checkpoint_rows": 507643,
+  "checkpoint_households": 2325,
+  "households_without_survey": 1122,
+  "share_over_limit": 0.7618,
+  "period": "2023-03 .. 2024-12"
+}

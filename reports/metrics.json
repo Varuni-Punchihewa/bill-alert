@@ -1,0 +1,61 @@
+{
+  "splits": {
+    "train": {
+      "rows": 301682,
+      "households": 2284,
+      "months": "2023-03 .. 2023-12",
+      "share_over_limit": 0.7572
+    },
+    "train_sample_used": {
+      "rows": 101151,
+      "households": 2284,
+      "months": "2023-03 .. 2023-12",
+      "share_over_limit": 0.7573
+    },
+    "validation": {
+      "rows": 116729,
+      "households": 2227,
+      "months": "2024-01 .. 2024-06",
+      "share_over_limit": 0.7611
+    },
+    "test": {
+      "rows": 89232,
+      "households": 2123,
+      "months": "2024-07 .. 2024-12",
+      "share_over_limit": 0.7779
+    }
+  },
+  "best_params": {
+    "rulefit": {
+      "max_rules": 40,
+      "tree_size": 6
+    },
+    "figs": {
+      "max_rules": 16
+    },
+    "lgbm": {
+      "num_leaves": 127,
+      "learning_rate": 0.03,
+      "n_estimators": 800,
+      "min_child_samples": 50
+    }
+  },
+  "final_model": "RuleFit (relaxed)",
+  "n_rules": 36,
+  "test_metrics": {
+    "accuracy": 0.9556997489689797,
+    "balanced_accuracy": 0.9260421668320598,
+    "precision_over": 0.9642168264594089,
+    "recall_over": 0.9793992652884823,
+    "recall_under": 0.8726850683756371,
+    "f1_macro": 0.9345913245424016,
+    "roc_auc": 0.9784262052669195,
+    "brier": 0.03468159095852665,
+    "log_loss": 0.13084342882469868
+  },
+  "test_accuracy_95ci_household_bootstrap": [
+    0.9505181019754099,
+    0.9610633073705517
+  ],
+  "runtime_minutes": 28.8
+}

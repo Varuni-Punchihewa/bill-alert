@@ -1,0 +1,13 @@
+# Full environment: data prep, training, explainability and tests
+-r requirements.txt
+interpret-core==0.7.8          # Explainable Boosting Machine (comparison model)
+lightgbm==4.7.0
+xgboost==3.4.1
+catboost==1.2.10
+shap==0.54.1
+lime==0.2.0.1
+matplotlib==3.11.2
+seaborn==0.13.2
+scipy==1.18.1
+pyarrow==25.0.1
+pytest

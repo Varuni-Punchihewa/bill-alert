@@ -1,0 +1,9 @@
+# Runtime for the Streamlit app.
+# Versions are pinned: the saved RuleFit model must be loaded with the same library versions it was trained with.
+streamlit==1.66.1
+pandas==3.0.5
+numpy==2.5.3
+scikit-learn==1.9.1
+imodels==3.0.4
+joblib==1.6.0
+holidays==0.107
