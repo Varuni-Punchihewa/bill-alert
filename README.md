@@ -10,7 +10,7 @@ meter readings so far, its last three bills, and a few facts about the home.
 
 * **Model:** **RuleFit** (Friedman & Popescu, 2008), a sparse logistic model over IF-THEN rules mined from a
   boosted tree ensemble, with a relaxed-lasso refit for calibrated probabilities (`src/rulefit_model.py`).
-  It was not covered in the lectures. It is compared with every model family taught (linear models, SVM, trees,
+  It is compared with every model family taught (linear models, SVM, trees,
   k-NN, bagging, random forest, AdaBoost, gradient boosting, XGBoost, LightGBM, CatBoost, voting, stacking, EBM),
   plus FIGS, extra trees, naive Bayes and two hand rules.
 * **Front end:** a Streamlit app for people with no ML background (`app/streamlit_app.py`).
